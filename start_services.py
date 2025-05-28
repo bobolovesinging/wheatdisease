@@ -26,8 +26,8 @@ SERVICES = {
         'args': ['--console']
     },
     'Redis': {
-        'path': r'D:\Program Files\Redis\redis-server.exe',
-        'args': []
+        'path': rf'D:\Program Files\Redis\redis-server.exe ',
+        'args': [rf'D:\Program Files\Redis\redis.windows.conf']
     },
     'Neo4j': {
         'path': r'D:\Program Files\neo4j-community-4.4.41\bin\neo4j.bat',
