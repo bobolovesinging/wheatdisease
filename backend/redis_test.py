@@ -20,7 +20,7 @@ def test_redis_connection():
             host='127.0.0.1',
             port=6379,
             db=1,
-            password='202210329',  # 使用settings中配置的密码
+            password=settings.REDIS_PASSWORD,
             decode_responses=True
         )
         
@@ -83,25 +83,4 @@ def test_redis_connection():
         return False
 
 if __name__ == '__main__':
-    # 以下为测试代码，仅在直接运行本文件时执行
-    import logging
-    logging.basicConfig(level=logging.INFO)
-    try:
-        from backend.connections import get_redis_client
-        client = get_redis_client()
-        logging.info('✓ Redis连接成功!')
-        # 字符串操作测试
-        client.set('test_key', 'test_value')
-        assert client.get('test_key').decode() == 'test_value'
-        logging.info('✓ 字符串操作测试成功')
-        # 哈希表操作测试
-        client.hset('test_hash', 'field', 'value')
-        assert client.hget('test_hash', 'field').decode() == 'value'
-        logging.info('✓ 哈希表操作测试成功')
-        # 列表操作测试
-        client.lpush('test_list', 'a', 'b', 'c')
-        assert client.lrange('test_list', 0, 2) == [b'c', b'b', b'a']
-        logging.info('✓ 列表操作测试成功')
-        logging.info('所有Redis测试通过!')
-    except Exception as e:
-        logging.error(f'Redis测试失败: {e}') 
+    test_redis_connection() 

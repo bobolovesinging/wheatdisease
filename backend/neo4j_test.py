@@ -36,15 +36,4 @@ class GraphManager:
             self.driver = None
 
 if __name__ == '__main__':
-    # 以下为测试代码，仅在直接运行本文件时执行
-    import logging
-    logging.basicConfig(level=logging.INFO)
-    try:
-        from backend.connections import get_neo4j_driver
-        driver = get_neo4j_driver()
-        with driver.session() as session:
-            result = session.run('RETURN 1 AS test')
-            assert result.single()['test'] == 1
-        logging.info('✓ Neo4j连接和基本查询测试通过!')
-    except Exception as e:
-        logging.error(f'Neo4j测试失败: {e}')
+    GraphManager()
