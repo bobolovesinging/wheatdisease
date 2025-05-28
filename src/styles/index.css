@@ -1,0 +1,210 @@
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4d4d4;
+}
+
+/* 输入框全局样式 */
+.el-input__inner {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.el-input__wrapper {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .1) !important;
+}
+
+.el-input__wrapper:focus-within {
+  box-shadow: 0 0 0 1px #409EFF !important;
+}
+
+/* 按钮全局样式 */
+.el-button--primary {
+  background-color: #409EFF;
+  border-color: #409EFF;
+}
+
+.el-button--primary:hover {
+  background-color: #66b1ff;
+  border-color: #66b1ff;
+}
+
+/* 链接样式 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 页面布局基础样式 */
+.page-container {
+  height: 100vh;
+  padding-top: 60px;
+}
+
+/* 统一全局字体和背景色 */
+body {
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* 根容器样式 */
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header 样式 */
+.el-header {
+  background-color: #409EFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Main 内容区 */
+.el-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow: auto;
+}
+
+/* Footer 样式 */
+.footer_wrap {
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.footer_wrap a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #409EFF;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer_wrap a:hover {
+  text-decoration: underline;
+}
+
+/* ChatContainer 样式 */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.chat-box {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box .message-item {
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.chat-box .message-item.user {
+  align-self: flex-end;
+  background-color: #409EFF;
+  color: white;
+}
+
+.chat-box .message-item.bot {
+  align-self: flex-start;
+  background-color: #E0E0E0;
+  color: #333;
+}
+
+.chat-box .message-item p {
+  margin: 0;
+}
+
+/* 输入框区域 */
+.input-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-bar .el-input {
+  flex: 1;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+}
+
+.input-bar .el-button {
+  border-radius: 20px;
+  background-color: #409EFF;
+  color: white;
+}
+
+.input-bar .el-button:hover {
+  background-color: #66b1ff;
+}
+
+/* 主页按钮区域 */
+.home {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home h1 {
+  font-size: 28px;
+  color: #333;
+  font-weight: bold;
+}
+
+.home .el-button {
+  margin-top: 20px;
+  font-size: 18px;
+}

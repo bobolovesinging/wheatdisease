@@ -1,0 +1,194 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "name": "赤霉病",
+      "type": "disease",
+      "description": "小麦赤霉病是一种严重的真菌性病害，主要危害小麦的穗部。"
+    },
+    {
+      "id": "2",
+      "name": "穗部发白",
+      "type": "symptom",
+      "description": "麦穗局部或整体呈现苍白色或枯白色。"
+    },
+    {
+      "id": "3",
+      "name": "粉红色霉层",
+      "type": "symptom",
+      "description": "在潮湿条件下，病穗表面出现粉红色霉层。"
+    },
+    {
+      "id": "4",
+      "name": "禾谷镰刀菌",
+      "type": "cause",
+      "description": "真菌性病原体，在温暖潮湿的环境下容易感染。"
+    },
+    {
+      "id": "5",
+      "name": "喷洒杀菌剂",
+      "type": "treatment",
+      "description": "在小麦开花期喷洒适当的杀菌剂进行预防和治疗。"
+    },
+    {
+      "id": "6",
+      "name": "白粉病",
+      "type": "disease",
+      "description": "一种常见的小麦真菌病害，主要危害叶片、叶鞘和麦穗。"
+    },
+    {
+      "id": "7",
+      "name": "白粉状物",
+      "type": "symptom",
+      "description": "叶片表面出现白色粉末状物质。"
+    },
+    {
+      "id": "8",
+      "name": "叶片发黄",
+      "type": "symptom",
+      "description": "受感染的叶片逐渐发黄、枯萎。"
+    },
+    {
+      "id": "9",
+      "name": "白粉病菌",
+      "type": "cause",
+      "description": "小麦白粉病菌，在干燥环境下易传播。"
+    },
+    {
+      "id": "10",
+      "name": "抗病品种",
+      "type": "treatment",
+      "description": "选用抗白粉病的小麦品种进行种植。"
+    },
+    {
+      "id": "11",
+      "name": "锈病",
+      "type": "disease",
+      "description": "包括条锈病、叶锈病和秆锈病，是重要的小麦病害。"
+    },
+    {
+      "id": "12",
+      "name": "黄色条纹",
+      "type": "symptom",
+      "description": "叶片上出现黄色或橙色的条状病斑。"
+    },
+    {
+      "id": "13",
+      "name": "锈菌",
+      "type": "cause",
+      "description": "由不同种类的锈菌引起，具有寄主专化性。"
+    },
+    {
+      "id": "14",
+      "name": "合理密植",
+      "type": "treatment",
+      "description": "适当控制种植密度，保持通风。"
+    },
+    {
+      "id": "15",
+      "name": "纹枯病",
+      "type": "disease",
+      "description": "危害茎秆、叶鞘，导致植株倒伏。"
+    },
+    {
+      "id": "16",
+      "name": "褐色病斑",
+      "type": "symptom",
+      "description": "茎秆基部出现褐色椭圆形病斑。"
+    },
+    {
+      "id": "17",
+      "name": "菌核",
+      "type": "symptom",
+      "description": "病部产生黑色菌核。"
+    },
+    {
+      "id": "18",
+      "name": "丝核菌",
+      "type": "cause",
+      "description": "由丝核菌引起，土壤湿度过大时易发病。"
+    }
+  ],
+  "links": [
+    {
+      "source": "1",
+      "target": "2",
+      "value": 1
+    },
+    {
+      "source": "1",
+      "target": "3",
+      "value": 1
+    },
+    {
+      "source": "4",
+      "target": "1",
+      "value": 1
+    },
+    {
+      "source": "1",
+      "target": "5",
+      "value": 1
+    },
+    {
+      "source": "6",
+      "target": "7",
+      "value": 1
+    },
+    {
+      "source": "6",
+      "target": "8",
+      "value": 1
+    },
+    {
+      "source": "9",
+      "target": "6",
+      "value": 1
+    },
+    {
+      "source": "6",
+      "target": "10",
+      "value": 1
+    },
+    {
+      "source": "11",
+      "target": "12",
+      "value": 1
+    },
+    {
+      "source": "13",
+      "target": "11",
+      "value": 1
+    },
+    {
+      "source": "11",
+      "target": "14",
+      "value": 1
+    },
+    {
+      "source": "15",
+      "target": "16",
+      "value": 1
+    },
+    {
+      "source": "15",
+      "target": "17",
+      "value": 1
+    },
+    {
+      "source": "18",
+      "target": "15",
+      "value": 1
+    },
+    {
+      "source": "15",
+      "target": "5",
+      "value": 1
+    },
+    {
+      "source": "15",
+      "target": "14",
+      "value": 1
+    }
+  ]
+}
